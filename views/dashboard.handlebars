@@ -18,23 +18,13 @@
     </div>
 </div>
 
-<div id="container">
-<div class="signup-container">
-      <div id="sign-up">Sign-Up</div>
-      <form class="form">
-        <div class="mb-3">
-          <label for="exampleInputName" class="form-label">Name:</label>
-          <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">E-Mail Address:</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password:</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
+
+<div id="post-container">
+  <div class="container-title">
+    <div id="user-text">{{name}}</div>
+    <div id="card-title">{{title}}</div>
+  </div>
+    <div class="card-text">{{text}}</div>
 </div>
-</div>
+
+<button type="submit" class="btn" id="newpostbtn">+ New Post</button>
