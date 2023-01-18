@@ -11,7 +11,7 @@
 </head>
 <div>
     <div id="title-container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Tech-Blog</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
                   <a class="nav-link" href="#">Dashboard</a>
                   <a class="nav-link" href="#">Logout</a>
                 </div>
@@ -29,24 +29,22 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-6">
-      <h2>Login</h2>
-  
-      <form class="form login-form">
-        <div class="form-group">
-          <label for="email-login">E-Mail:</label>
-          <input class="form-input" type="text" id="email-login" />
+<div id="container">
+<div class="signup-container">
+      <div id="sign-up">Log-In</div>
+      <form class="form">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Name:</label>
+          <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
         </div>
-        <div class="form-group">
-          <label for="password-login">Password:</label>
-          <input class="form-input" type="password" id="password-login" />
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <div class="form-group">
-          <button class="btn btn-primary" type="submit">Login</button>
-        </div>
+        <button type="submit" class="btn">Submit</button>
       </form>
-    </div>
-  </div>
+      <a href="signup.html" class="btn">Don't have an account? Sign-Up here</a>
+</div>
+</div>
 
 </html>
